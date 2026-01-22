@@ -1,6 +1,9 @@
 # Obsidian vault (user's personal knowledge base)
 obsidian-vault/
 
+# WebZotero service (user data and configuration)
+webzotero/
+
 # Claude Code local config (auto-generated)
 .claude/
 
