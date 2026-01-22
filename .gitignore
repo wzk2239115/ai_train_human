@@ -1,0 +1,15 @@
+# Obsidian vault (user's personal knowledge base)
+obsidian-vault/
+
+# Claude Code local config (auto-generated)
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,62 +1,62 @@
 ---
-description: Help you learn a concept deeply, not just give an answer
-argument-hint: <topic> [depth-level]
+description: 帮助你深入学习一个概念，而不只是给出答案
+argument-hint: <主题> [深度级别]
 allowed-tools: [Read, Glob, Grep]
 model: sonnet
 ---
 
 # /help-me-learn
 
-Make AI your learning partner, not your answer generator.
+让 AI 成为你的学习伙伴，而不是答案生成器。
 
-## Usage
-
-```
-/help-me-learn <topic> [depth]
-```
-
-**Examples:**
-- `/help-me-learn recursion` - Learn recursion fundamentals
-- `/help-me-learn "react hooks" deep` - Deep dive with context and trade-offs
-- `/help-me-learn "first-principles thinking"` - Learn mental models
-
-## What This Command Does
-
-Unlike asking "explain X", this command makes AI help you:
-
-1. **Diagnose your level** - Ask what you already know
-2. **Build from first principles** - Start with fundamentals, not rote answers
-3. **Show multiple perspectives** - Compare approaches, trade-offs
-4. **Test understanding** - Ask you questions to verify learning
-5. **Connect to your knowledge** - Link to what you already understand
-
-## Depth Levels
-
-- **basic** (default): Core concepts, simple examples
-- **intermediate**: Underlying mechanics, when to use/avoid
-- **deep**: First principles, history, alternatives, edge cases
-
-## Output Format
+## 使用方法
 
 ```
-## 1. What You Already Know
-[Assessment]
-
-## 2. First Principles
-[Core fundamentals]
-
-## 3. Mental Model
-[How to think about this topic]
-
-## 4. Common Pitfalls
-[What beginners get wrong]
-
-## 5. Practice Questions
-[Test your understanding]
+/help-me-learn <主题> [深度]
 ```
 
-## Philosophy
+**示例：**
+- `/help-me-learn 递归` - 学习递归基础
+- `/help-me-learn "React Hooks" deep` - 深入学习，包含上下文和权衡
+- `/help-me-learn "第一性原理思维"` - 学习思维模型
 
-> "Don't just get the answer. Learn how to think about the problem."
+## 这个命令的作用
 
-This command is inspired by Gemini's "help me learn" feature. It's not about quick answers—it's about building permanent understanding.
+与"解释 X"不同，这个命令会让 AI 帮助你：
+
+1. **评估你的水平** - 询问你已经知道什么
+2. **从第一性原理构建** - 从基础开始，而不是死记硬背
+3. **展示多个视角** - 比较不同方法和权衡
+4. **测试理解程度** - 提问来验证你的学习效果
+5. **连接你的知识** - 链接到你已经理解的内容
+
+## 深度级别
+
+- **basic** (默认)：核心概念，简单示例
+- **intermediate**：底层机制，何时使用/避免
+- **deep**：第一性原理，历史，替代方案，边界情况
+
+## 输出格式
+
+```
+## 1. 你已经知道了什么
+[评估]
+
+## 2. 第一性原理
+[核心基础]
+
+## 3. 心智模型
+[如何思考这个问题]
+
+## 4. 常见误区
+[初学者容易犯错的地方]
+
+## 5. 练习问题
+[测试你的理解]
+```
+
+## 理念
+
+> "不要只得到答案。要学会如何思考问题。"
+
+这个命令灵感来自 Gemini 的 "help me learn" 功能。它不是关于快速答案——而是关于建立持久的理解。
