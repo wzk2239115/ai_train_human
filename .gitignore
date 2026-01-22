@@ -7,6 +7,9 @@ webzotero/
 # Claude Code local config (auto-generated)
 .claude/
 
+# Tester reports
+tester-reports/
+
 # OS files
 .DS_Store
 Thumbs.db
