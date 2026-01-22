@@ -55,14 +55,19 @@ ai_train_human/
 ├── .claude-plugin/   # 插件元数据
 │   └── plugin.json
 ├── commands/         # 斜杠命令（主动调用）
-│   ├── help-me-learn.md   # 深度学习一个概念
-│   ├── critique.md   # 批评你的作品/想法
-│   ├── simulate.md   # 模拟场景练习
-│   └── deconstruct.md # 拆解复杂问题
+│   ├── help-me-learn.md    # 深度学习一个概念
+│   ├── save-learning.md    # 保存学习笔记到 Obsidian
+│   ├── solve-problem.md    # 算法题解题训练
+│   ├── critique.md         # 批评你的作品/想法
+│   ├── simulate.md         # 模拟场景练习
+│   ├── deconstruct.md      # 拆解复杂问题
+│   ├── generate-innovation.md # 论文创新点生成
+│   ├── obsidian.md         # Obsidian 笔记管理
+│   └── setup-webzotero.md  # WebZotero 服务部署
 ├── skills/           # 技能（AI自动触发）
 │   └── ai-teacher/   # 核心教学技能
 │       └── SKILL.md
-├── logseq/           # 知识库
+├── obsidian-vault/   # Obsidian 知识库（本地，不提交）
 └── README.md
 ```
 
@@ -100,6 +105,76 @@ cd ai_train_human
 - 思维模型（而不只是事实）
 - 常见陷阱
 - 理解测试题
+
+**保存学习笔记：**
+
+学习过程中，如果发现有价值的内容，可以手动保存到 Obsidian：
+
+```bash
+/save-learning "递归的核心概念"
+/save-learning "React Hooks 深度理解" concept
+```
+
+推荐工作流：
+1. 使用 `/help-me-learn` 学习主题
+2. 学习过程中思考：这个值得记录吗？
+3. 如果值得，使用 `/save-learning` 手动保存
+4. 继续学习
+
+### `/solve-problem` - 算法解题训练
+
+不只是得到答案，而是培养解题思维：
+
+```bash
+/solve-problem "两数之和"                       # 练习经典算法题
+/solve-problem "LRU缓存" hard                   # 挑战难题
+/solve-problem "实现 debounce" medium frontend  # 前端场景题
+```
+
+**AI 会：**
+- 不直接给答案，而是引导思考
+- 暴示解题思维过程（分析→建模→算法→编码）
+- 指出代码问题和优化方向
+- 生成类似题目巩固理解
+
+### `/generate-innovation` - 论文创新点生成
+
+基于研究对话快速生成 10 套"A+B+C"论文创新点组合：
+
+```bash
+# 前提：先与 AI 进行深入的研究对话（至少 10+ 轮）
+# 然后运行命令生成创新点组合
+/generate-innovation
+```
+
+**适用场景：**
+- 论文选题阶段缺乏思路
+- 有初步想法但不够新颖
+- 需要快速探索多个可能方向
+
+### `/obsidian` - Obsidian 笔记管理
+
+在 Obsidian 中创建、搜索和管理笔记：
+
+```bash
+/obsidian create "我的笔记标题"      # 创建新笔记
+/obsidian search "关键词"            # 搜索笔记
+/obsidian list                       # 列出最近的笔记
+```
+
+### `/setup-webzotero` - WebZotero 服务部署
+
+使用 Docker 快速部署 WebZotero（网页版 Zotero 文献管理）：
+
+```bash
+/setup-webzotero
+```
+
+**功能：**
+- 自动检查 Docker 环境
+- 使用 Docker Compose 部署 WebZotero
+- 配置数据持久化
+- 提供访问地址和管理命令
 
 ### `/critique` - 狠辣批评
 
@@ -171,13 +246,18 @@ AI扮演对手，真实演练，事后复盘。
 ❌ "帮我写这段代码"
 ❌ "解释什么是闭包"
 ❌ "我的代码有bug，帮我修"
+❌ "给我一个论文创新点"
+❌ "帮我解这道算法题"
 ```
 
 ### 正确用法（把AI当老师）：
 ```bash
 ✅ /help-me-learn "javascript closures"
 ✅ "写这段代码，然后解释：1) 你的思考过程？2) 有哪些替代方案？3) 需求变化时会出什么问题？"
-✅ /critique my-code.js   # 让AI教你怎么调试
+✅ /critique my-code.js              # 让AI教你怎么调试
+✅ /solve-problem "LRU缓存"          # 培养解题思维
+✅ /generate-innovation              # 基于研究对话生成创新点
+✅ /save-learning "今天学到的核心概念" # 保存有价值的学习内容
 ```
 
 ## 核心原则
