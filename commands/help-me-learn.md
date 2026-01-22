@@ -1,4 +1,5 @@
 ---
+name: help-me-learn
 description: 帮助你深入学习一个概念，而不只是给出答案
 argument-hint: <主题> [深度级别]
 allowed-tools: [Read, Glob, Grep]

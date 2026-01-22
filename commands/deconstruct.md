@@ -1,4 +1,5 @@
 ---
+name: deconstruct
 description: Break down complex problems into first principles
 argument-hint: <complex-problem> [granularity]
 allowed-tools: [WebSearch, Read]

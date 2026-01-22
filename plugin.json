@@ -1,0 +1,21 @@
+{
+  "name": "ai-train-human",
+  "version": "1.0.0",
+  "description": "AI 教练插件 - 帮助你深度学习和理解知识，而不只是给出答案",
+  "author": {
+    "name": "wangzekai"
+  },
+  "skills": [
+    "skills/ai-teacher/"
+  ],
+  "agents": [
+    ".claude/agents/academic-paper-mentor.md"
+  ],
+  "commands": [
+    "commands/help-me-learn.md",
+    "commands/deconstruct.md",
+    "commands/simulate.md",
+    "commands/generate-innovation.md",
+    "commands/critique.md"
+  ]
+}

@@ -1,4 +1,5 @@
 ---
+name: generate-innovation
 description: 基于研究对话快速生成10套"A+B+C"论文创新点组合
 argument-hint: <研究主题/问题/对话摘要>
 allowed-tools: [WebSearch, mcp__web-search-prime__webSearchPrime]

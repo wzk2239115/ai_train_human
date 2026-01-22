@@ -1,4 +1,5 @@
 ---
+name: critique
 description: Ruthlessly critique your work and find blind spots
 argument-hint: <your-work-url-or-description> [focus-area]
 allowed-tools: [Read, Glob, Grep, WebSearch]

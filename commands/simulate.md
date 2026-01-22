@@ -1,4 +1,5 @@
 ---
+name: simulate
 description: Simulate scenarios for practice (interviews, negotiations, presentations)
 argument-hint: <scenario-type> [context]
 allowed-tools: []
